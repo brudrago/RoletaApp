@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pR6-eQ-fnp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SortViewController" customModule="RoletaApp_dh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="wcm-hJ-OWY">
+                                <rect key="frame" x="107" y="64" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="CMy-pN-rT4"/>
+                                    <constraint firstAttribute="width" constant="200" id="oJe-a8-Bx9"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JtS-ua-n73">
+                                <rect key="frame" x="20" y="324" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="KS5-wF-gMF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light" returnKeyType="done" textContentType="name"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjh-Bi-9vp">
+                                <rect key="frame" x="20" y="389" width="374" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="81D-fq-enX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Sortear">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sortButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L7u-yA-imt"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AlQ-bM-2bA">
+                                <rect key="frame" x="0.0" y="474" width="414" height="339"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mjh-Bi-9vp" secondAttribute="trailing" constant="20" id="1Fk-Sj-yQn"/>
+                            <constraint firstItem="JtS-ua-n73" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3WJ-rc-Uzv"/>
+                            <constraint firstItem="JtS-ua-n73" firstAttribute="top" secondItem="wcm-hJ-OWY" secondAttribute="bottom" constant="60" id="OMO-Gi-dVX"/>
+                            <constraint firstItem="mjh-Bi-9vp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="b4B-WA-88M"/>
+                            <constraint firstItem="AlQ-bM-2bA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fPj-6S-EQc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AlQ-bM-2bA" secondAttribute="bottom" id="fZk-6x-4qB"/>
+                            <constraint firstItem="AlQ-bM-2bA" firstAttribute="top" secondItem="mjh-Bi-9vp" secondAttribute="bottom" constant="40" id="no4-Ug-a7y"/>
+                            <constraint firstItem="wcm-hJ-OWY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="p46-jw-Ubx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JtS-ua-n73" secondAttribute="trailing" constant="20" id="rWa-OT-6ah"/>
+                            <constraint firstItem="wcm-hJ-OWY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tvf-IK-AyY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AlQ-bM-2bA" secondAttribute="trailing" id="tzP-AE-aMk"/>
+                            <constraint firstItem="mjh-Bi-9vp" firstAttribute="top" secondItem="JtS-ua-n73" secondAttribute="bottom" constant="20" id="uWG-p9-4Oa"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="dot.arrowtriangles.up.right.down.left.circle" catalog="system" id="bKq-5q-RCD"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="JtS-ua-n73" id="bnf-HT-EnA"/>
+                        <outlet property="sortButton" destination="mjh-Bi-9vp" id="Qnj-oe-uWh"/>
+                        <outlet property="tableView" destination="AlQ-bM-2bA" id="86d-JQ-KnF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="123.88392857142857"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="TAv-Wu-RZ8">
+            <objects>
+                <viewController id="IaM-Ba-j9s" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sw3-2s-Q2Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vlD-f2-ZZp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="wallet.pass" catalog="system" id="SJa-Ax-7Ed"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Zi-qs-QLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="826"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dRy-TU-qgN">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pR6-eQ-fnp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N8L-wy-sNe">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="3fu-OC-aWW"/>
+                        <segue destination="IaM-Ba-j9s" kind="relationship" relationship="viewControllers" id="7cS-EI-c8T"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38y-5F-AUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card" width="128" height="128"/>
+        <image name="dot.arrowtriangles.up.right.down.left.circle" catalog="system" width="128" height="121"/>
+        <image name="wallet.pass" catalog="system" width="115" height="128"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

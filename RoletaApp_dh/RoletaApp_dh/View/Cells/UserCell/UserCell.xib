@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="UserCell" customModule="RoletaApp_dh" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="xvT-B9-CH4">
+                        <rect key="frame" x="20" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="acc-T6-kXd"/>
+                            <constraint firstAttribute="height" constant="50" id="wyV-GF-D5A"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="credit-card" translatesAutoresizingMaskIntoConstraints="NO" id="f6z-2x-7mE">
+                        <rect key="frame" x="250" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="1dz-xY-3oq"/>
+                            <constraint firstAttribute="width" constant="50" id="Hss-cS-20V"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fulano de Tal" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bma-oO-5PJ">
+                        <rect key="frame" x="80" y="24.5" width="160" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <color key="textColor" red="0.94117647059999998" green="0.91764705879999997" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xvT-B9-CH4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="56D-Vf-FFP"/>
+                    <constraint firstAttribute="bottom" secondItem="xvT-B9-CH4" secondAttribute="bottom" constant="10" id="C5T-0S-qmQ"/>
+                    <constraint firstAttribute="trailing" secondItem="f6z-2x-7mE" secondAttribute="trailing" constant="20" id="Pns-Be-Y42"/>
+                    <constraint firstItem="f6z-2x-7mE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Vtc-wt-sFk"/>
+                    <constraint firstItem="xvT-B9-CH4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Ze7-S7-HqU"/>
+                    <constraint firstItem="f6z-2x-7mE" firstAttribute="leading" secondItem="bma-oO-5PJ" secondAttribute="trailing" constant="10" id="d7j-Bz-dtC"/>
+                    <constraint firstItem="bma-oO-5PJ" firstAttribute="leading" secondItem="xvT-B9-CH4" secondAttribute="trailing" constant="10" id="dNT-kR-uW9"/>
+                    <constraint firstAttribute="bottom" secondItem="f6z-2x-7mE" secondAttribute="bottom" constant="10" id="gAQ-yn-3K0"/>
+                    <constraint firstItem="bma-oO-5PJ" firstAttribute="centerY" secondItem="xvT-B9-CH4" secondAttribute="centerY" id="pHD-ju-lIf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.019564927230000001" green="0.019564927230000001" blue="0.019564927230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <connections>
+                <outlet property="avatarImage" destination="xvT-B9-CH4" id="ERb-Ys-ToU"/>
+                <outlet property="nameLabel" destination="bma-oO-5PJ" id="s0Q-Eh-erW"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="145.98214285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Image-1" width="512" height="512"/>
+        <image name="credit-card" width="128" height="128"/>
+    </resources>
+</document>

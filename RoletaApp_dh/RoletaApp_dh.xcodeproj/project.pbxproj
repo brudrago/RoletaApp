@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		7071362926C06D000090437B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071362826C06D000090437B /* AppDelegate.swift */; };
 		7071362B26C06D000090437B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071362A26C06D000090437B /* SceneDelegate.swift */; };
-		7071362D26C06D000090437B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071362C26C06D000090437B /* ViewController.swift */; };
 		7071363026C06D000090437B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7071362E26C06D000090437B /* Main.storyboard */; };
-		7071363226C06D010090437B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7071363126C06D010090437B /* Assets.xcassets */; };
 		7071363526C06D010090437B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7071363326C06D010090437B /* LaunchScreen.storyboard */; };
+		7071364226C072F00090437B /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071364126C072F00090437B /* SortViewController.swift */; };
+		7071364426C075D20090437B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7071364326C075D20090437B /* Assets.xcassets */; };
+		7071364926C0768D0090437B /* RouletteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071364726C0768D0090437B /* RouletteCell.swift */; };
+		7071364A26C0768D0090437B /* RouletteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7071364826C0768D0090437B /* RouletteCell.xib */; };
+		7071364E26C078D70090437B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071364C26C078D70090437B /* UserCell.swift */; };
+		7071364F26C078D70090437B /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7071364D26C078D70090437B /* UserCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7071362526C06D000090437B /* RoletaApp_dh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoletaApp_dh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7071362826C06D000090437B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7071362A26C06D000090437B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7071362C26C06D000090437B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7071362F26C06D000090437B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7071363126C06D010090437B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7071363426C06D010090437B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7071363626C06D010090437B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7071363626C06D010090437B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RoletaApp_dh/Info.plist; sourceTree = SOURCE_ROOT; };
+		7071364126C072F00090437B /* SortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
+		7071364326C075D20090437B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7071364726C0768D0090437B /* RouletteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteCell.swift; sourceTree = "<group>"; };
+		7071364826C0768D0090437B /* RouletteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RouletteCell.xib; sourceTree = "<group>"; };
+		7071364C26C078D70090437B /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		7071364D26C078D70090437B /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,83 @@
 		7071362726C06D000090437B /* RoletaApp_dh */ = {
 			isa = PBXGroup;
 			children = (
-				7071362826C06D000090437B /* AppDelegate.swift */,
-				7071362A26C06D000090437B /* SceneDelegate.swift */,
-				7071362C26C06D000090437B /* ViewController.swift */,
-				7071362E26C06D000090437B /* Main.storyboard */,
-				7071363126C06D010090437B /* Assets.xcassets */,
-				7071363326C06D010090437B /* LaunchScreen.storyboard */,
+				7071363F26C072C40090437B /* Controller */,
+				7071363E26C072BF0090437B /* View */,
+				7071363D26C072B80090437B /* Model */,
 				7071363626C06D010090437B /* Info.plist */,
+				7071363C26C06DCA0090437B /* Support */,
 			);
 			path = RoletaApp_dh;
+			sourceTree = "<group>";
+		};
+		7071363C26C06DCA0090437B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				7071364326C075D20090437B /* Assets.xcassets */,
+				7071363326C06D010090437B /* LaunchScreen.storyboard */,
+				7071362A26C06D000090437B /* SceneDelegate.swift */,
+				7071362826C06D000090437B /* AppDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		7071363D26C072B80090437B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7071363E26C072BF0090437B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7071364526C076690090437B /* Cells */,
+				7071364026C072CE0090437B /* Storyboard */,
+				7071364126C072F00090437B /* SortViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7071363F26C072C40090437B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7071364026C072CE0090437B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7071362E26C06D000090437B /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7071364526C076690090437B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7071364B26C078C50090437B /* UserCell */,
+				7071364626C076730090437B /* RouletteCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7071364626C076730090437B /* RouletteCell */ = {
+			isa = PBXGroup;
+			children = (
+				7071364726C0768D0090437B /* RouletteCell.swift */,
+				7071364826C0768D0090437B /* RouletteCell.xib */,
+			);
+			path = RouletteCell;
+			sourceTree = "<group>";
+		};
+		7071364B26C078C50090437B /* UserCell */ = {
+			isa = PBXGroup;
+			children = (
+				7071364C26C078D70090437B /* UserCell.swift */,
+				7071364D26C078D70090437B /* UserCell.xib */,
+			);
+			path = UserCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +201,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7071363526C06D010090437B /* LaunchScreen.storyboard in Resources */,
-				7071363226C06D010090437B /* Assets.xcassets in Resources */,
+				7071364A26C0768D0090437B /* RouletteCell.xib in Resources */,
+				7071364426C075D20090437B /* Assets.xcassets in Resources */,
 				7071363026C06D000090437B /* Main.storyboard in Resources */,
+				7071364F26C078D70090437B /* UserCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7071362D26C06D000090437B /* ViewController.swift in Sources */,
 				7071362926C06D000090437B /* AppDelegate.swift in Sources */,
+				7071364926C0768D0090437B /* RouletteCell.swift in Sources */,
 				7071362B26C06D000090437B /* SceneDelegate.swift in Sources */,
+				7071364E26C078D70090437B /* UserCell.swift in Sources */,
+				7071364226C072F00090437B /* SortViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = RoletaApp_dh/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -271,6 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = RoletaApp_dh/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
