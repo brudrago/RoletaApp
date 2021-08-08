@@ -16,7 +16,7 @@ class RouletteCell: UITableViewCell {
     
     // MARK: - Identifier
     
-    static let identifier = "RouletteCell"
+    static let identifier = K.rouletteCell
     
     // MARK: - Life Cycle
     

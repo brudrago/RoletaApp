@@ -16,13 +16,12 @@ class UserCell: UITableViewCell {
     
     // MARK: - Identifier
     
-    static let identifier = "UserCell"
+    static let identifier = K.userCell
     
     // MARK: - Functions
     
-    //    func setupCell(user: User) {
-    //        self.avatarImage.image = user.imageName
-    //        self.nameLabel.text = user.name
-    //    }
-    
+    func setupCell(user: User) {
+        self.avatarImage.image = user.userImage
+        self.nameLabel.text = user.name
+    }
 }
