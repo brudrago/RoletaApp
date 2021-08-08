@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Sort View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SortViewController" customModule="RoletaApp_dh" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="wcm-hJ-OWY">
-                                <rect key="frame" x="107" y="64" width="200" height="200"/>
+                                <rect key="frame" x="107" y="108" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="CMy-pN-rT4"/>
                                     <constraint firstAttribute="width" constant="200" id="oJe-a8-Bx9"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JtS-ua-n73">
-                                <rect key="frame" x="20" y="324" width="374" height="45"/>
+                                <rect key="frame" x="20" y="368" width="374" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="KS5-wF-gMF"/>
                                 </constraints>
@@ -32,7 +32,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light" returnKeyType="done" textContentType="name"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjh-Bi-9vp">
-                                <rect key="frame" x="20" y="389" width="374" height="45"/>
+                                <rect key="frame" x="20" y="433" width="374" height="45"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="81D-fq-enX"/>
@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AlQ-bM-2bA">
-                                <rect key="frame" x="0.0" y="474" width="414" height="339"/>
+                                <rect key="frame" x="0.0" y="518" width="414" height="295"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableView>
                         </subviews>
@@ -72,7 +72,7 @@
                             <constraint firstItem="mjh-Bi-9vp" firstAttribute="top" secondItem="JtS-ua-n73" secondAttribute="bottom" constant="20" id="uWG-p9-4Oa"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="dot.arrowtriangles.up.right.down.left.circle" catalog="system" id="bKq-5q-RCD"/>
+                    <navigationItem key="navigationItem" id="NRq-PO-seI"/>
                     <connections>
                         <outlet property="nameTextField" destination="JtS-ua-n73" id="bnf-HT-EnA"/>
                         <outlet property="sortButton" destination="mjh-Bi-9vp" id="Qnj-oe-uWh"/>
@@ -81,7 +81,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="123.88392857142857"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="123.88392857142857"/>
+        </scene>
+        <!--Checkout View Controller-->
+        <scene sceneID="AvH-cn-680">
+            <objects>
+                <viewController storyboardIdentifier="CheckoutViewController" id="GG0-qM-PVa" customClass="CheckoutViewController" customModule="RoletaApp_dh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jbz-X3-6kR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5tr-D2-EjH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ppw-pi-JiD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5tr-D2-EjH" firstAttribute="leading" secondItem="Ppw-pi-JiD" secondAttribute="leading" id="J2h-MY-HgX"/>
+                            <constraint firstItem="Ppw-pi-JiD" firstAttribute="trailing" secondItem="5tr-D2-EjH" secondAttribute="trailing" id="iSD-hf-4MB"/>
+                            <constraint firstItem="5tr-D2-EjH" firstAttribute="top" secondItem="Ppw-pi-JiD" secondAttribute="top" id="vZq-ex-CWn"/>
+                            <constraint firstItem="Ppw-pi-JiD" firstAttribute="bottom" secondItem="5tr-D2-EjH" secondAttribute="bottom" id="zAT-q7-3Wj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="5tr-D2-EjH" id="OpO-Pg-GFw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CoB-TG-kTK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2741" y="124"/>
         </scene>
         <!--Item-->
         <scene sceneID="TAv-Wu-RZ8">
@@ -97,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Zi-qs-QLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="146" y="826"/>
+            <point key="canvasLocation" x="138" y="832"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dRy-TU-qgN">
@@ -110,13 +140,32 @@
                         <color key="barTintColor" red="0.019564927230000001" green="0.019564927230000001" blue="0.019564927230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="3fu-OC-aWW"/>
+                        <segue destination="uMc-t8-fx4" kind="relationship" relationship="viewControllers" id="3fu-OC-aWW"/>
                         <segue destination="IaM-Ba-j9s" kind="relationship" relationship="viewControllers" id="7cS-EI-c8T"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38y-5F-AUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="bfW-53-xeO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uMc-t8-fx4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="dot.arrowtriangles.up.right.down.left.circle" catalog="system" id="bKq-5q-RCD"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D1L-vY-1lz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hKm-8L-Az4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAV-dz-Ec3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="123.88392857142857"/>
         </scene>
     </scenes>
     <resources>

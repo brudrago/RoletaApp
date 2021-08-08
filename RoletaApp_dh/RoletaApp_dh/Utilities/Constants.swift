@@ -10,7 +10,10 @@ import UIKit
 enum K {
     static let placeholder              = "Digite seu nome"
     static let userCell                 = "UserCell"
+    static let orderCell                = "OrderCell"
+    static let paymentCell              = "PaymentCell"
     static let rouletteCell             = "RouletteCell"
+    static let checkoutVCIdentifier     = "CheckoutViewController"
     static let alertMessage             = "Você foi o premiado da vez, entregue seu cartão e faça a boa para seus amigos da mesa, pague a conta!!"
     static let buttonTitle              = "Ok"
 }
@@ -23,4 +26,6 @@ enum Images {
     static let imageFive                = UIImage(named: "Image-5")
     static let imageRolette             = UIImage(named: "roleta")
     static let imageSkull               = UIImage(named: "Image")
+    static let imageFood                = UIImage(named: "food")
+    static let imageBeer                = UIImage(named: "beer")
 }

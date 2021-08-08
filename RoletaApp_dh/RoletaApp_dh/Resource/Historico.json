@@ -1,0 +1,56 @@
+{
+  "totalValue": 3566.10,
+  "historyAccountList": [
+    {
+      "historyID": "9a157e36-7279-41d0-9d30-5310e9afd6321",
+      "date": "2020-11-24T00:00:00.000",
+      "name": "Bar da Mooca",
+      "price": 250.10,
+      "iconImage": "url-image-mooca"
+    },
+    {
+        "historyID": "9a157e36-7279-41d0-9d30-5310e9afd6322",
+        "date": "2020-11-24T00:00:00.000",
+        "name": "Bar Nuporanga",
+        "price": 150.40,
+        "iconImage": "url-image-nuporanga"
+    },
+   {
+       "historyID": "9a157e36-7279-41d0-9d30-5310e9afd6324",
+       "date": "2020-11-24T00:00:00.000",
+       "name": "Bar da Mooca",
+       "price": 350.60,
+       "iconImage": "url-image-mooca"
+    },
+    {
+        "historyID": "9a157e36-7279-41d0-9d30-5310e9afd6323",
+        "date": "2020-11-24T00:00:00.000",
+        "name": "Bar Nuporanga",
+        "price": 150.70,
+        "iconImage": "url-image-nuporanga"
+    },
+   {
+       "historyID": "9a157e36-7279-41d0-9d30-5310e9afd6325",
+       "date": "2020-11-24T00:00:00.000",
+       "name": "Bar da Mooca",
+       "price": 250.10,
+       "iconImage": "url-image-mooca"
+    },
+    {
+        "historyID": "9a157e36-7279-41d0-9d30-5310e9afd6326",
+        "date": "2020-11-24T00:00:00.000",
+        "name": "Bar Nuporanga",
+        "price": 250.70,
+        "iconImage": "url-image-nuporanga"
+    },
+    {
+        "historyID": "9a157e36-7279-41d0-9d30-5310e9afd6328",
+        "date": "2020-11-24T00:00:00.000",
+        "name": "Buteco do Jão",
+        "price": 100.80,
+        "iconImage": "url-image-Buteco"
+    }
+
+    ]
+ }
+ 

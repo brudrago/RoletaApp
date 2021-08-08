@@ -16,6 +16,7 @@ class SortViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     // MARK: - Private Properties
+    
     private let controller = SortController()
     
     // MARK: - Life Cycle
@@ -23,13 +24,12 @@ class SortViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-       // setupButton()
     }
     
     // MARK: - Private Functions
     
     private func setupUI() {
-        self.controller.delegate = self
+        controller.delegate = self
         
         nameTextField.delegate = self
         nameTextField.placeholder = K.placeholder
@@ -40,6 +40,10 @@ class SortViewController: UIViewController {
                            forCellReuseIdentifier: RouletteCell.identifier)
         tableView.register(UINib(nibName: UserCell.identifier, bundle: nil),
                            forCellReuseIdentifier: UserCell.identifier)
+        
+        let footerView = UIView()
+        footerView.backgroundColor = .black
+        self.tableView.tableFooterView = footerView
     }
     
     private func setupButton() {
@@ -71,6 +75,18 @@ class SortViewController: UIViewController {
         cell.setupCell(user: user)
         
         return cell
+    }
+    
+    private func proceedToCheckout() {
+        let identifier = K.checkoutVCIdentifier
+        guard let checkoutViewController = self.storyboard?.instantiateViewController(identifier: identifier)
+                as? CheckoutViewController else { return }
+        checkoutViewController.modalPresentationStyle = .fullScreen
+        present(checkoutViewController, animated: true) {
+            self.controller.setCanSelectuser(false)
+            self.controller.removeAllUsers()
+            self.tableView.reloadData()
+        }
     }
     
     @IBAction func sortButtonTapped(_ sender: UIButton) {
@@ -107,16 +123,20 @@ extension SortViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return controller.isEmpty() ? getRouletteCell() : getUserCell(index: indexPath.row)
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        controller.checkUserSorted(indexPath: indexPath)
+    }
 }
 
 // MARK: - SortControllerDelegate extension
 
 extension SortViewController: SortControllerDelegate {
+    
     func showSortedUser(name: String) {
         showMessageWithAction(
-            title: name, message: K.alertMessage, actionTitle: "OK") { action in
-            self.controller.proceedToCheckout()
-            self.tableView.reloadData()
+            title: name, message: K.alertMessage, actionTitle: K.buttonTitle) { action in
+            self.proceedToCheckout()
         }
     }
     

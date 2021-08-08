@@ -21,6 +21,15 @@
 		7071365426C07D1B0090437B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071365326C07D1B0090437B /* Constants.swift */; };
 		7071365626C07DC00090437B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071365526C07DC00090437B /* User.swift */; };
 		7071365926C084360090437B /* UIViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071365826C084360090437B /* UIViewController+ext.swift */; };
+		7071365B26C088620090437B /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071365A26C088620090437B /* CheckoutViewController.swift */; };
+		7071365D26C089B10090437B /* CheckoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071365C26C089B10090437B /* CheckoutController.swift */; };
+		7071366026C08A2B0090437B /* Account.json in Resources */ = {isa = PBXBuildFile; fileRef = 7071365F26C08A2B0090437B /* Account.json */; };
+		7071366226C08A330090437B /* Historico.json in Resources */ = {isa = PBXBuildFile; fileRef = 7071366126C08A330090437B /* Historico.json */; };
+		7071366426C08A6C0090437B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071366326C08A6C0090437B /* Order.swift */; };
+		7071366826C08EA90090437B /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071366626C08EA90090437B /* OrderCell.swift */; };
+		7071366926C08EA90090437B /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7071366726C08EA90090437B /* OrderCell.xib */; };
+		7071366D26C092060090437B /* PaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071366B26C092060090437B /* PaymentCell.swift */; };
+		7071366E26C092060090437B /* PaymentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7071366C26C092060090437B /* PaymentCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +49,15 @@
 		7071365326C07D1B0090437B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7071365526C07DC00090437B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7071365826C084360090437B /* UIViewController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ext.swift"; sourceTree = "<group>"; };
+		7071365A26C088620090437B /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		7071365C26C089B10090437B /* CheckoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutController.swift; sourceTree = "<group>"; };
+		7071365F26C08A2B0090437B /* Account.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Account.json; sourceTree = "<group>"; };
+		7071366126C08A330090437B /* Historico.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Historico.json; sourceTree = "<group>"; };
+		7071366326C08A6C0090437B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		7071366626C08EA90090437B /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		7071366726C08EA90090437B /* OrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
+		7071366B26C092060090437B /* PaymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCell.swift; sourceTree = "<group>"; };
+		7071366C26C092060090437B /* PaymentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +90,7 @@
 		7071362726C06D000090437B /* RoletaApp_dh */ = {
 			isa = PBXGroup;
 			children = (
+				7071365E26C089E60090437B /* Resource */,
 				7071365726C0840F0090437B /* Extensions */,
 				7071365226C07CF70090437B /* Utilities */,
 				7071363F26C072C40090437B /* Controller */,
@@ -98,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				7071365526C07DC00090437B /* User.swift */,
+				7071366326C08A6C0090437B /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,6 +128,7 @@
 				7071364526C076690090437B /* Cells */,
 				7071364026C072CE0090437B /* Storyboard */,
 				7071364126C072F00090437B /* SortViewController.swift */,
+				7071365A26C088620090437B /* CheckoutViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				7071365026C07CBA0090437B /* SortController.swift */,
+				7071365C26C089B10090437B /* CheckoutController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,6 +153,8 @@
 		7071364526C076690090437B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				7071366A26C091EA0090437B /* PaymentCell */,
+				7071366526C08E8F0090437B /* OrderCell */,
 				7071364626C076730090437B /* RouletteCell */,
 				7071364B26C078C50090437B /* UserCell */,
 			);
@@ -169,6 +193,33 @@
 				7071365826C084360090437B /* UIViewController+ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7071365E26C089E60090437B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7071366126C08A330090437B /* Historico.json */,
+				7071365F26C08A2B0090437B /* Account.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7071366526C08E8F0090437B /* OrderCell */ = {
+			isa = PBXGroup;
+			children = (
+				7071366626C08EA90090437B /* OrderCell.swift */,
+				7071366726C08EA90090437B /* OrderCell.xib */,
+			);
+			path = OrderCell;
+			sourceTree = "<group>";
+		};
+		7071366A26C091EA0090437B /* PaymentCell */ = {
+			isa = PBXGroup;
+			children = (
+				7071366B26C092060090437B /* PaymentCell.swift */,
+				7071366C26C092060090437B /* PaymentCell.xib */,
+			);
+			path = PaymentCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +281,11 @@
 			files = (
 				7071363526C06D010090437B /* LaunchScreen.storyboard in Resources */,
 				7071364A26C0768D0090437B /* RouletteCell.xib in Resources */,
+				7071366926C08EA90090437B /* OrderCell.xib in Resources */,
+				7071366226C08A330090437B /* Historico.json in Resources */,
 				7071364426C075D20090437B /* Assets.xcassets in Resources */,
+				7071366E26C092060090437B /* PaymentCell.xib in Resources */,
+				7071366026C08A2B0090437B /* Account.json in Resources */,
 				7071363026C06D000090437B /* Main.storyboard in Resources */,
 				7071364F26C078D70090437B /* UserCell.xib in Resources */,
 			);
@@ -247,10 +302,15 @@
 				7071364926C0768D0090437B /* RouletteCell.swift in Sources */,
 				7071362B26C06D000090437B /* SceneDelegate.swift in Sources */,
 				7071365926C084360090437B /* UIViewController+ext.swift in Sources */,
+				7071366D26C092060090437B /* PaymentCell.swift in Sources */,
 				7071365126C07CBA0090437B /* SortController.swift in Sources */,
 				7071365626C07DC00090437B /* User.swift in Sources */,
+				7071366826C08EA90090437B /* OrderCell.swift in Sources */,
+				7071366426C08A6C0090437B /* Order.swift in Sources */,
 				7071365426C07D1B0090437B /* Constants.swift in Sources */,
 				7071364E26C078D70090437B /* UserCell.swift in Sources */,
+				7071365D26C089B10090437B /* CheckoutController.swift in Sources */,
+				7071365B26C088620090437B /* CheckoutViewController.swift in Sources */,
 				7071364226C072F00090437B /* SortViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
