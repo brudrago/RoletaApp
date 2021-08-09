@@ -25,6 +25,11 @@ class SortViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupButton()
+        createDismissKeyboardTapGesture()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setNavigationBar()
     }
     
@@ -50,6 +55,11 @@ class SortViewController: UIViewController {
     
     private func setNavigationBar() {
         navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    private  func createDismissKeyboardTapGesture() {
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:)))
+        view.addGestureRecognizer(tap)
     }
     
     private func setupButton() {

@@ -23,4 +23,13 @@ extension UIViewController {
         alertController.view.tintColor = .systemBlue
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    func  showCustomAlertOnMainThread(title: String, message: String, buttonTitle: String) {
+        DispatchQueue.main.async {
+            let alertVC = AlertViewController(title: title, message: message, buttonTitle: buttonTitle)
+            alertVC.modalPresentationStyle = .overFullScreen
+            alertVC.modalTransitionStyle = .crossDissolve
+            self.present(alertVC, animated: true)
+        }
+    }
 }

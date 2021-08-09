@@ -33,6 +33,8 @@
 		7071367026C0AED80090437B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071366F26C0AED80090437B /* ListViewController.swift */; };
 		7071367226C0AFFE0090437B /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071367126C0AFFE0090437B /* ListController.swift */; };
 		7071367426C0B03D0090437B /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071367326C0B03D0090437B /* List.swift */; };
+		70E1C90926C14CCF00057E5A /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1C90726C14CCF00057E5A /* AlertViewController.swift */; };
+		70E1C90A26C14CCF00057E5A /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E1C90826C14CCF00057E5A /* AlertViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		7071366F26C0AED80090437B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		7071367126C0AFFE0090437B /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		7071367326C0B03D0090437B /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		70E1C90726C14CCF00057E5A /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		70E1C90826C14CCF00057E5A /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +203,7 @@
 		7071365726C0840F0090437B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				70E1C90626C14CAD00057E5A /* Shared */,
 				7071365826C084360090437B /* UIViewController+ext.swift */,
 			);
 			path = Extensions;
@@ -229,6 +234,15 @@
 				7071366C26C092060090437B /* PaymentCell.xib */,
 			);
 			path = PaymentCell;
+			sourceTree = "<group>";
+		};
+		70E1C90626C14CAD00057E5A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				70E1C90726C14CCF00057E5A /* AlertViewController.swift */,
+				70E1C90826C14CCF00057E5A /* AlertViewController.xib */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +311,7 @@
 				7071366026C08A2B0090437B /* Account.json in Resources */,
 				7071363026C06D000090437B /* Main.storyboard in Resources */,
 				7071364F26C078D70090437B /* UserCell.xib in Resources */,
+				70E1C90A26C14CCF00057E5A /* AlertViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +335,7 @@
 				7071367426C0B03D0090437B /* List.swift in Sources */,
 				7071365426C07D1B0090437B /* Constants.swift in Sources */,
 				7071364E26C078D70090437B /* UserCell.swift in Sources */,
+				70E1C90926C14CCF00057E5A /* AlertViewController.swift in Sources */,
 				7071365D26C089B10090437B /* CheckoutController.swift in Sources */,
 				7071365B26C088620090437B /* CheckoutViewController.swift in Sources */,
 				7071364226C072F00090437B /* SortViewController.swift in Sources */,

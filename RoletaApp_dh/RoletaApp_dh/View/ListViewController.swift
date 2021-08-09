@@ -24,6 +24,8 @@ class ListViewController: UIViewController {
         controller.fetchList()
     }
     
+    // MARK: - Private Functions
+    
     private func setupUI() {
         controller.delegate = self
         

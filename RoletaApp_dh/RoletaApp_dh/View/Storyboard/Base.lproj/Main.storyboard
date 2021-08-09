@@ -151,6 +151,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pR6-eQ-fnp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N8L-wy-sNe">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.019564927230000001" green="0.019564927230000001" blue="0.019564927230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -164,11 +165,11 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Roleta-->
         <scene sceneID="bfW-53-xeO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uMc-t8-fx4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" selectedImage="dot.arrowtriangles.up.right.down.left.circle" catalog="system" id="bKq-5q-RCD"/>
+                    <tabBarItem key="tabBarItem" title="Roleta" image="dot.arrowtriangles.up.right.down.left.circle" catalog="system" id="bKq-5q-RCD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="D1L-vY-1lz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -184,11 +185,11 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="123.88392857142857"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Historic-->
         <scene sceneID="Knt-RL-PaU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eCg-0c-ZVM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" selectedImage="doc.text" catalog="system" systemItem="history" id="SJa-Ax-7Ed"/>
+                    <tabBarItem key="tabBarItem" title="Historic" image="doc.plaintext" catalog="system" id="SJa-Ax-7Ed"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HV6-FI-L7c">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -207,7 +208,7 @@
     </scenes>
     <resources>
         <image name="card" width="128" height="128"/>
-        <image name="doc.text" catalog="system" width="115" height="128"/>
+        <image name="doc.plaintext" catalog="system" width="115" height="128"/>
         <image name="dot.arrowtriangles.up.right.down.left.circle" catalog="system" width="128" height="121"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
