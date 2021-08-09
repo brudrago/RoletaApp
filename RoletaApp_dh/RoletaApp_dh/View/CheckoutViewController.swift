@@ -118,8 +118,7 @@ extension CheckoutViewController: CheckoutControllerDelegate {
 
 extension CheckoutViewController: PaymentCellDelegate {
     
-    func goBack() {
-        print("BUTTON")
+    func dismissVC() {
         dismiss(animated: true)
     }
 }

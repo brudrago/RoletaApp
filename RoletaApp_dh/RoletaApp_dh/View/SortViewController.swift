@@ -25,6 +25,7 @@ class SortViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupButton()
+        setNavigationBar()
     }
     
     // MARK: - Private Functions
@@ -45,6 +46,10 @@ class SortViewController: UIViewController {
         let footerView = UIView()
         footerView.backgroundColor = .black
         self.tableView.tableFooterView = footerView
+    }
+    
+    private func setNavigationBar() {
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     private func setupButton() {

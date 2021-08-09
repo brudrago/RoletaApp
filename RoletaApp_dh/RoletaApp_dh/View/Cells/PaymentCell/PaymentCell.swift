@@ -9,7 +9,7 @@ import UIKit
 
 protocol PaymentCellDelegate {
     
-    func goBack()
+    func dismissVC()
 }
 
 class PaymentCell: UITableViewCell {
@@ -29,14 +29,13 @@ class PaymentCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        setupButton()
+        setup()
     }
     
     // MARK: - Action
     
     @IBAction func payButtonTapped(_ sender: UIButton) {
-        print("BUTTON")
-        delegate?.goBack()
+        delegate?.dismissVC()
     }
     
     // MARK: - Functions
@@ -47,11 +46,8 @@ class PaymentCell: UITableViewCell {
     
     // MARK: - Private Functions
     
-    private func setupButton() {
-        payButton.layer.cornerRadius = 8
-    }
-    
-    private func proceedToHome() {
-       
+    private func setup() {
+        payButton.layer.cornerRadius = 4
+        self.selectionStyle = .none
     }
 }

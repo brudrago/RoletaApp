@@ -114,21 +114,36 @@
             </objects>
             <point key="canvasLocation" x="2741" y="124"/>
         </scene>
-        <!--Item-->
+        <!--List View Controller-->
         <scene sceneID="TAv-Wu-RZ8">
             <objects>
-                <viewController id="IaM-Ba-j9s" sceneMemberID="viewController">
+                <viewController id="IaM-Ba-j9s" customClass="ListViewController" customModule="RoletaApp_dh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sw3-2s-Q2Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GrR-y4-ijC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vlD-f2-ZZp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GrR-y4-ijC" firstAttribute="top" secondItem="sw3-2s-Q2Z" secondAttribute="top" id="AjH-vY-gtW"/>
+                            <constraint firstItem="GrR-y4-ijC" firstAttribute="leading" secondItem="sw3-2s-Q2Z" secondAttribute="leading" id="DUc-TB-iAl"/>
+                            <constraint firstAttribute="bottom" secondItem="GrR-y4-ijC" secondAttribute="bottom" id="KBp-kF-r9h"/>
+                            <constraint firstAttribute="trailing" secondItem="GrR-y4-ijC" secondAttribute="trailing" id="yj4-YW-BK4"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="wallet.pass" catalog="system" id="SJa-Ax-7Ed"/>
+                    <navigationItem key="navigationItem" id="NY7-xK-SU8"/>
+                    <connections>
+                        <outlet property="tableView" destination="GrR-y4-ijC" id="P9w-v8-cYL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Zi-qs-QLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="832"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="831.69642857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dRy-TU-qgN">
@@ -142,22 +157,23 @@
                     </tabBar>
                     <connections>
                         <segue destination="uMc-t8-fx4" kind="relationship" relationship="viewControllers" id="3fu-OC-aWW"/>
-                        <segue destination="IaM-Ba-j9s" kind="relationship" relationship="viewControllers" id="7cS-EI-c8T"/>
+                        <segue destination="eCg-0c-ZVM" kind="relationship" relationship="viewControllers" id="7cS-EI-c8T"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38y-5F-AUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
         </scene>
-        <!--Item-->
+        <!--Roleta-->
         <scene sceneID="bfW-53-xeO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uMc-t8-fx4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="dot.arrowtriangles.up.right.down.left.circle" catalog="system" id="bKq-5q-RCD"/>
+                    <tabBarItem key="tabBarItem" title="Roleta" selectedImage="dot.arrowtriangles.up.right.down.left.circle" catalog="system" id="bKq-5q-RCD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="D1L-vY-1lz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -168,11 +184,31 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="123.88392857142857"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Knt-RL-PaU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eCg-0c-ZVM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" selectedImage="doc.text" catalog="system" systemItem="history" id="SJa-Ax-7Ed"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HV6-FI-L7c">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.019564927230000001" green="0.019564927230000001" blue="0.019564927230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IaM-Ba-j9s" kind="relationship" relationship="rootViewController" id="kaA-gY-41J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xe5-4O-fXN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="831.69642857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="card" width="128" height="128"/>
+        <image name="doc.text" catalog="system" width="115" height="128"/>
         <image name="dot.arrowtriangles.up.right.down.left.circle" catalog="system" width="128" height="121"/>
-        <image name="wallet.pass" catalog="system" width="115" height="128"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

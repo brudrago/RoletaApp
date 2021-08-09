@@ -23,10 +23,16 @@ class OrderCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        setupCell()
     }
     
     // MARK: - Functions
+    
+    func setupList(item: ItemList) {
+        itemName.text = item.name
+        itemPrice.text = String(format: "%.2f", item.price) //String (item.price)
+        itemQuantity.isHidden = true
+    }
     
     func setup(item: ItemOrder) {
         itemName.text = item.name
@@ -40,5 +46,9 @@ class OrderCell: UITableViewCell {
         let food = Images.imageFood
         
         return items.productType == "BEBIDA" ? drink : food
+    }
+    
+    private func setupCell() {
+        self.selectionStyle = .none
     }
 }
