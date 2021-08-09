@@ -24,6 +24,7 @@ class SortViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupButton()
     }
     
     // MARK: - Private Functions

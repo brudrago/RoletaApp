@@ -39,8 +39,14 @@ class CheckoutViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: OrderCell.identifier, bundle: nil), forCellReuseIdentifier: OrderCell.identifier)
-        tableView.register(UINib(nibName: PaymentCell.identifier, bundle: nil), forCellReuseIdentifier: PaymentCell.identifier)
+        tableView.register(UINib(nibName: OrderCell.identifier, bundle: nil),
+                           forCellReuseIdentifier: OrderCell.identifier)
+        tableView.register(UINib(nibName: PaymentCell.identifier, bundle: nil),
+                           forCellReuseIdentifier: PaymentCell.identifier)
+        
+        let footerView = UIView()
+        footerView.backgroundColor = .black
+        self.tableView.tableFooterView = footerView
     }
     
     private func getOrderCell(_ indexPath: IndexPath) -> UITableViewCell {
@@ -60,6 +66,7 @@ class CheckoutViewController: UIViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier)as? PaymentCell
         else { return UITableViewCell() }
         
+        cell.delegate = self
         let total = controller.getTotalValue()
         cell.setup(orderTotal: total)
         
@@ -104,5 +111,15 @@ extension CheckoutViewController: CheckoutControllerDelegate {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
+    }
+}
+
+// MARK: - PaymentCellDelegate extension
+
+extension CheckoutViewController: PaymentCellDelegate {
+    
+    func goBack() {
+        print("BUTTON")
+        dismiss(animated: true)
     }
 }
