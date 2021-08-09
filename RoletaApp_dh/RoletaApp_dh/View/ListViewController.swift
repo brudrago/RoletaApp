@@ -20,6 +20,7 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setNavigationBar()
         controller.fetchList()
     }
     
@@ -34,6 +35,10 @@ class ListViewController: UIViewController {
         let footerView = UIView()
         footerView.backgroundColor = .black
         self.tableView.tableFooterView = footerView
+    }
+    
+    private func setNavigationBar() {
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     private func getOrderCell(_ indexPath: IndexPath) -> UITableViewCell {

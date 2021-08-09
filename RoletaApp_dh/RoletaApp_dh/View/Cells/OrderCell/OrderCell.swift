@@ -30,7 +30,7 @@ class OrderCell: UITableViewCell {
     
     func setupList(item: ItemList) {
         itemName.text = item.name
-        itemPrice.text = String(format: "%.2f", item.price) //String (item.price)
+        itemPrice.text = String(format: "%.2f", item.price)
         itemQuantity.isHidden = true
     }
     

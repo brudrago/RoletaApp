@@ -164,11 +164,11 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
         </scene>
-        <!--Roleta-->
+        <!--Navigation Controller-->
         <scene sceneID="bfW-53-xeO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uMc-t8-fx4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Roleta" selectedImage="dot.arrowtriangles.up.right.down.left.circle" catalog="system" id="bKq-5q-RCD"/>
+                    <tabBarItem key="tabBarItem" selectedImage="dot.arrowtriangles.up.right.down.left.circle" catalog="system" id="bKq-5q-RCD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="D1L-vY-1lz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
