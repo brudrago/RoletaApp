@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 class SortViewController: UIViewController {
     
@@ -14,10 +15,12 @@ class SortViewController: UIViewController {
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var sortButton: UIButton!
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var animationView: UIView!
     
     // MARK: - Private Properties
     
     private let controller = SortController()
+    private let animationViewLottie = AnimationView()
     
     // MARK: - Life Cycle
     
@@ -31,6 +34,7 @@ class SortViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setNavigationBar()
+        setupLottie()
     }
     
     // MARK: - Private Functions
@@ -51,6 +55,23 @@ class SortViewController: UIViewController {
         let footerView = UIView()
         footerView.backgroundColor = .black
         self.tableView.tableFooterView = footerView
+    }
+    
+    private func setupLottie() {
+        let animation = Animation.named("credit-card")
+        
+        animationViewLottie.animation = animation
+        animationViewLottie.contentMode = .scaleAspectFit
+        animationView.addSubview(animationViewLottie)
+        
+        animationViewLottie.translatesAutoresizingMaskIntoConstraints = false
+        animationViewLottie.topAnchor.constraint(equalTo: animationView.layoutMarginsGuide.topAnchor).isActive = true
+        animationViewLottie.leadingAnchor.constraint(equalTo: animationView.leadingAnchor).isActive = true
+        
+        animationViewLottie.trailingAnchor.constraint(equalTo: animationView.trailingAnchor).isActive = true
+        animationViewLottie.setContentCompressionResistancePriority(.fittingSizeLevel, for: .horizontal)
+        
+        animationViewLottie.play(fromFrame: 0, toFrame: 200, loopMode: .loop)
     }
     
     private func setNavigationBar() {

@@ -16,13 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="wcm-hJ-OWY">
-                                <rect key="frame" x="107" y="108" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="CMy-pN-rT4"/>
-                                    <constraint firstAttribute="width" constant="200" id="oJe-a8-Bx9"/>
-                                </constraints>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JtS-ua-n73">
                                 <rect key="frame" x="20" y="368" width="374" height="45"/>
                                 <constraints>
@@ -54,26 +47,35 @@
                                 <rect key="frame" x="0.0" y="518" width="414" height="295"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fI4-As-Scs">
+                                <rect key="frame" x="107" y="108" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="K5Z-L6-4Hu"/>
+                                    <constraint firstAttribute="height" constant="200" id="bVm-d0-gWo"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mjh-Bi-9vp" secondAttribute="trailing" constant="20" id="1Fk-Sj-yQn"/>
                             <constraint firstItem="JtS-ua-n73" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3WJ-rc-Uzv"/>
-                            <constraint firstItem="JtS-ua-n73" firstAttribute="top" secondItem="wcm-hJ-OWY" secondAttribute="bottom" constant="60" id="OMO-Gi-dVX"/>
                             <constraint firstItem="mjh-Bi-9vp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="b4B-WA-88M"/>
+                            <constraint firstItem="fI4-As-Scs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f9r-KL-bF6"/>
                             <constraint firstItem="AlQ-bM-2bA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fPj-6S-EQc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AlQ-bM-2bA" secondAttribute="bottom" id="fZk-6x-4qB"/>
                             <constraint firstItem="AlQ-bM-2bA" firstAttribute="top" secondItem="mjh-Bi-9vp" secondAttribute="bottom" constant="40" id="no4-Ug-a7y"/>
-                            <constraint firstItem="wcm-hJ-OWY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="p46-jw-Ubx"/>
+                            <constraint firstItem="fI4-As-Scs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="qDM-Vr-Hj5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JtS-ua-n73" secondAttribute="trailing" constant="20" id="rWa-OT-6ah"/>
-                            <constraint firstItem="wcm-hJ-OWY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tvf-IK-AyY"/>
+                            <constraint firstItem="JtS-ua-n73" firstAttribute="top" secondItem="fI4-As-Scs" secondAttribute="bottom" constant="60" id="s1W-cp-fAh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AlQ-bM-2bA" secondAttribute="trailing" id="tzP-AE-aMk"/>
                             <constraint firstItem="mjh-Bi-9vp" firstAttribute="top" secondItem="JtS-ua-n73" secondAttribute="bottom" constant="20" id="uWG-p9-4Oa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NRq-PO-seI"/>
                     <connections>
+                        <outlet property="animationView" destination="fI4-As-Scs" id="fCx-Q4-pam"/>
                         <outlet property="nameTextField" destination="JtS-ua-n73" id="bnf-HT-EnA"/>
                         <outlet property="sortButton" destination="mjh-Bi-9vp" id="Qnj-oe-uWh"/>
                         <outlet property="tableView" destination="AlQ-bM-2bA" id="86d-JQ-KnF"/>
@@ -207,9 +209,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="card" width="128" height="128"/>
         <image name="doc.plaintext" catalog="system" width="115" height="128"/>
         <image name="dot.arrowtriangles.up.right.down.left.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

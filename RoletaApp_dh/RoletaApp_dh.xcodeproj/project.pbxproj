@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64B24B4E32A9CB00C06A08B1 /* Pods_RoletaApp_dh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0D09BC07F05082AF1B222C /* Pods_RoletaApp_dh.framework */; };
 		7071362926C06D000090437B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071362826C06D000090437B /* AppDelegate.swift */; };
 		7071362B26C06D000090437B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071362A26C06D000090437B /* SceneDelegate.swift */; };
 		7071363026C06D000090437B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7071362E26C06D000090437B /* Main.storyboard */; };
@@ -35,9 +36,12 @@
 		7071367426C0B03D0090437B /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071367326C0B03D0090437B /* List.swift */; };
 		70E1C90926C14CCF00057E5A /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1C90726C14CCF00057E5A /* AlertViewController.swift */; };
 		70E1C90A26C14CCF00057E5A /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E1C90826C14CCF00057E5A /* AlertViewController.xib */; };
+		70EAB6B626C33E81001A48B2 /* credit-card.json in Resources */ = {isa = PBXBuildFile; fileRef = 70EAB6B526C33E81001A48B2 /* credit-card.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F2B742BD4187725A0A9F8D8 /* Pods-RoletaApp_dh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoletaApp_dh.release.xcconfig"; path = "Target Support Files/Pods-RoletaApp_dh/Pods-RoletaApp_dh.release.xcconfig"; sourceTree = "<group>"; };
+		5B950474EDDC898FFEE83752 /* Pods-RoletaApp_dh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoletaApp_dh.debug.xcconfig"; path = "Target Support Files/Pods-RoletaApp_dh/Pods-RoletaApp_dh.debug.xcconfig"; sourceTree = "<group>"; };
 		7071362526C06D000090437B /* RoletaApp_dh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoletaApp_dh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7071362826C06D000090437B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7071362A26C06D000090437B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 		7071367326C0B03D0090437B /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		70E1C90726C14CCF00057E5A /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		70E1C90826C14CCF00057E5A /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
+		70EAB6B526C33E81001A48B2 /* credit-card.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "credit-card.json"; sourceTree = "<group>"; };
+		FE0D09BC07F05082AF1B222C /* Pods_RoletaApp_dh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoletaApp_dh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B24B4E32A9CB00C06A08B1 /* Pods_RoletaApp_dh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +93,8 @@
 			children = (
 				7071362726C06D000090437B /* RoletaApp_dh */,
 				7071362626C06D000090437B /* Products */,
+				9435267D8F4F00ABA058C367 /* Pods */,
+				D10C4431A358D781B036E4C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +221,7 @@
 		7071365E26C089E60090437B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				70EAB6B526C33E81001A48B2 /* credit-card.json */,
 				7071366126C08A330090437B /* Historico.json */,
 				7071365F26C08A2B0090437B /* Account.json */,
 			);
@@ -245,6 +255,23 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		9435267D8F4F00ABA058C367 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B950474EDDC898FFEE83752 /* Pods-RoletaApp_dh.debug.xcconfig */,
+				4F2B742BD4187725A0A9F8D8 /* Pods-RoletaApp_dh.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D10C4431A358D781B036E4C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE0D09BC07F05082AF1B222C /* Pods_RoletaApp_dh.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,9 +279,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7071363926C06D010090437B /* Build configuration list for PBXNativeTarget "RoletaApp_dh" */;
 			buildPhases = (
+				60905853E341297E6366A4E2 /* [CP] Check Pods Manifest.lock */,
 				7071362126C06D000090437B /* Sources */,
 				7071362226C06D000090437B /* Frameworks */,
 				7071362326C06D000090437B /* Resources */,
+				61B6949C3FD1AD9E4C8737FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,12 +339,55 @@
 				7071366E26C092060090437B /* PaymentCell.xib in Resources */,
 				7071366026C08A2B0090437B /* Account.json in Resources */,
 				7071363026C06D000090437B /* Main.storyboard in Resources */,
+				70EAB6B626C33E81001A48B2 /* credit-card.json in Resources */,
 				7071364F26C078D70090437B /* UserCell.xib in Resources */,
 				70E1C90A26C14CCF00057E5A /* AlertViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60905853E341297E6366A4E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoletaApp_dh-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61B6949C3FD1AD9E4C8737FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoletaApp_dh/Pods-RoletaApp_dh-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoletaApp_dh/Pods-RoletaApp_dh-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RoletaApp_dh/Pods-RoletaApp_dh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7071362126C06D000090437B /* Sources */ = {
@@ -485,6 +557,7 @@
 		};
 		7071363A26C06D010090437B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B950474EDDC898FFEE83752 /* Pods-RoletaApp_dh.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -504,6 +577,7 @@
 		};
 		7071363B26C06D010090437B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F2B742BD4187725A0A9F8D8 /* Pods-RoletaApp_dh.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
