@@ -38,8 +38,8 @@
                             <constraint firstItem="LxO-nz-s5s" firstAttribute="top" secondItem="2pC-f2-Mub" secondAttribute="bottom" constant="20" id="4pk-j2-zsP"/>
                             <constraint firstItem="LxO-nz-s5s" firstAttribute="leading" secondItem="gPa-tN-ShK" secondAttribute="leading" constant="40" id="5aL-Ad-bih"/>
                             <constraint firstItem="2pC-f2-Mub" firstAttribute="centerX" secondItem="gPa-tN-ShK" secondAttribute="centerX" id="9t6-4Z-wsg"/>
+                            <constraint firstAttribute="bottom" secondItem="LxO-nz-s5s" secondAttribute="bottom" constant="24" id="AsR-Oy-uOP"/>
                             <constraint firstItem="2pC-f2-Mub" firstAttribute="top" secondItem="gPa-tN-ShK" secondAttribute="top" constant="5" id="WbY-RP-uq2"/>
-                            <constraint firstAttribute="height" constant="190" id="Z4S-rG-0qD"/>
                             <constraint firstAttribute="trailing" secondItem="LxO-nz-s5s" secondAttribute="trailing" constant="40" id="nW6-9J-lw7"/>
                         </constraints>
                     </view>

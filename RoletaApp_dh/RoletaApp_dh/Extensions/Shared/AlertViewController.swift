@@ -25,13 +25,16 @@ class AlertViewController: UIViewController {
     
     var buttonTitle = String()
     
+    var buttonAction: (()-> Void)?
+    
     // MARK: - Inits
     
-    init(title: String, message: String, buttonTitle: String) {
+    init(title: String, message: String, buttonTitle: String, buttonAction:(()-> Void)?) {
         super.init(nibName: "AlertViewController", bundle: nil)
         self.alertTitle = title
         self.alertMessage = message
         self.buttonTitle = buttonTitle
+        self.buttonAction = buttonAction
     }
     
     required init?(coder: NSCoder) {
@@ -50,6 +53,8 @@ class AlertViewController: UIViewController {
 
     @IBAction func ActionButtonTapped(_ sender: UIButton) {
         dismiss(animated: true)
+        
+        buttonAction?()
     }
     
     // MARK: - Private Functions

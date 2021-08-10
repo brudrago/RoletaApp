@@ -26,6 +26,7 @@ class SortViewController: UIViewController {
         setupUI()
         setupButton()
         createDismissKeyboardTapGesture()
+        controller.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -149,14 +150,13 @@ extension SortViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension SortViewController: SortControllerDelegate {
     
-    func showSortedUser(name: String) {
-        showMessageWithAction(
-            title: name, message: K.alertMessage, actionTitle: K.buttonTitle) { action in
-            self.proceedToCheckout()
-        }
-    }
-    
     func removeNotSortedUser(indexPath: IndexPath) {
         tableView.deleteRows(at: [indexPath], with: .left)
+    }
+    
+    func showSortedUser(name: String) {
+        showCustomAlertWithActionOnMainThread(title: name, message: K.alertMessage, buttonTitle: K.buttonTitle) {
+            self.proceedToCheckout()
+        }
     }
 }

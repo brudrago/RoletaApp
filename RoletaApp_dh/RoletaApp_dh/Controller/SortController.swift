@@ -40,7 +40,8 @@ class SortController {
         if name.isEmpty { return }
         
         guard let userImage = imageNames.randomElement() else { return }
-        users.append(User(name: name, userImage: userImage ?? UIImage()))
+       // users.append(User(name: name, userImage: userImage ?? UIImage()))
+        users.insert(User(name: name, userImage: userImage ?? UIImage()), at: 0)
     }
     
     func getUser(index: Int) -> User {

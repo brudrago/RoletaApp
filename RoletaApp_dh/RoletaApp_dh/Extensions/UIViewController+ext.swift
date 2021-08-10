@@ -24,9 +24,19 @@ extension UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    func  showCustomAlertOnMainThread(title: String, message: String, buttonTitle: String) {
+//    func showCustomAlertOnMainThread(title: String, message: String, buttonTitle: String) {
+//        DispatchQueue.main.async {
+//            let alertVC = AlertViewController(title: title, message: message, buttonTitle: buttonTitle)
+//            alertVC.modalPresentationStyle = .overFullScreen
+//            alertVC.modalTransitionStyle = .crossDissolve
+//            self.present(alertVC, animated: true)
+//        }
+//    }
+    
+    func showCustomAlertWithActionOnMainThread(title: String, message: String, buttonTitle: String, completion: @escaping ()-> Void) {
         DispatchQueue.main.async {
-            let alertVC = AlertViewController(title: title, message: message, buttonTitle: buttonTitle)
+           // let alertVC = AlertViewController(title: title, message: message, buttonTitle: buttonTitle)
+            let alertVC = AlertViewController(title: title, message: message, buttonTitle: buttonTitle, buttonAction: completion)
             alertVC.modalPresentationStyle = .overFullScreen
             alertVC.modalTransitionStyle = .crossDissolve
             self.present(alertVC, animated: true)
