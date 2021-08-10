@@ -26,7 +26,6 @@ class SortViewController: UIViewController {
         setupUI()
         setupButton()
         createDismissKeyboardTapGesture()
-        controller.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
