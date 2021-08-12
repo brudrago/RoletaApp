@@ -10,3 +10,6 @@ Foi desenvolvido :
 - Utilizando Storyboard e XIB para o layout
 - Possui um alerta customizado
 
+![5jf76b](https://user-images.githubusercontent.com/22052855/129276994-b4f1adec-9bd7-4f11-90a2-88168ff413a0.gif)
+
+
